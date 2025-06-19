@@ -1,11 +1,10 @@
 # NetScout Plugin: Port Scanner
-Host
-Port Range
-Timeout
+
+Host, Port, Range, Timeout
 
 This is a plugin for the NetScout-Go network diagnostics tool. It provides Scans for open ports on a target host
 The hostname or IP address to scan
-Range of ports to scan (e.g.
+Range of ports to scan (e.g. 1-65535 or 80,443)
 Timeout in seconds for each port.
 
 ## Installation
@@ -21,7 +20,7 @@ timeout
 
 Or use the NetScout-Go plugin manager to install it:
 
-```
+```go
 // In your NetScout application
 pluginLoader.InstallPlugin("https://github.com/NetScout-Go/Plugin_port_scanner")
 ```
@@ -33,4 +32,4 @@ pluginLoader.InstallPlugin("https://github.com/NetScout-Go/Plugin_port_scanner")
 
 ## License
 
-MIT License
+GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
